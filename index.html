@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<style type="text/less">
+		*{
+			margin: 0; padding: 0;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+		html,body{
+			height: 100%;
+		}
+		div#photo{
+			@size: 130px;
+			background-image: url('https://s.gravatar.com/avatar/fc10ba2c1cc5d2c6089d3f663b6c112e?s=130');
+			width: @size;
+			height: @size;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+
+		div#title{
+			display: none;
+			margin: 20px auto;
+			width: 500px;
+			text-align: center;
+
+			div#text{
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: 300;
+			}
+
+			i{
+				font-size: 14px;
+				font-style: italic;
+				font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+			}
+			div#name{
+				font-size: 20px;
+				font-weight: 400;
+				text-transform: uppercase;
+				font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+			}
+
+		}
+		div#container{
+
+			position: absolute;
+			top: 120px;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			div.horizontalContent{
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				div#articleWrap{
+					padding: 0;
+					overflow-x: scroll;
+					overflow-y: hidden;
+					height: 100%;
+					white-space: nowrap;
+
+					div#articleContent{
+						display: inline-block;
+						height: 100%;
+						padding: 50px;
+
+						position: relative;
+
+						& > *{
+							display: inline-block;
+						}
+						div#summary{
+							width: 300px;
+							margin-right: 55px;
+							vertical-align: top;
+							white-space: normal;
+							height: 100%;
+							overflow-y: auto;
+							position: relative;
+						}
+						div#advanceEditorArticle{
+							height: 100%;
+							column-gap: 20px;
+							width: 450px;
+							column-width: 450px;
+							-moz-column-gap: 0;
+							-moz-column-width: 450px;
+							-webkit-column-gap: 20px;
+							-webkit-column-width: 450px;
+							white-space: normal;
+						}
+
+					}
+				}
+			}
+			
+		}
+
+	</style>
+	<script src="js/less-1.4.1.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<div id="photo"></div>
+	<div id="title">
+		<div id="text">Portfolio</div>
+		<i>—of—</i><br>
+		<div id="name">Hiroki Osame</div>
+	</div>
+
+	<div id="container">
+		<div class="horizontalContent">
+			<div id="articleWrap" class="withCover">
+				<div id="articleContent">
+					<div id="summary" class="Small">
+						<header>
+							<h2>Film</h2>
+							<h1>I Went to the Oscars and Nobody Cared</h1>	
+						</header>
+								<p class="dotted">
+
+									<span class="author">By
+
+										<a href="/whocarols">Laura Simpson</a>
+
+									</span>
+
+
+									• March 04, 2014
+
+								</p>
+								<p class="description dotted">The world watched as my date grabbed my neck while falling on the red carpet. But backstage that night, I had a blast feeding Kerry Washington and sniffing Brad Pitt.</p>
+
+								<div class="sponsor">
+									<div>Photo by Christopher Polk/Getty Images</div>
+									<a href="" target="_blank"><img src="" title=""></a>
+								</div>
+
+								<div class="stats">
+									<a class="nLikes" data-entity-key="blog_profile_38223802_20447"><i class="social_like"></i><span>493</span></a>
+
+
+									<a><i class="social_comment"></i><span>35</span></a>
+
+									<a data-stat="share" class="share"><i class="social_share"></i><span>Share</span></a>
+
+								</div>
+							</div>
+
+
+							<div id="advanceEditorArticle">
+
+
+								<p style="text-align: justify;"><strong>This year</strong>, I was lucky enough to be invited to the Oscars. While every girl I knew squealed and asked what I was wearing I was riddled with anxiety. The day before the Oscars I had a fitting with Dior where I got to try on some beautiful dresses. I was between two dresses: the Carrie Bradshaw all-you-can-eat dress and the Angelina Jolie sexy leg kimono. I really wasn't sure if I would ever get back to the Oscars so I let my inner Carrie Bradshaw take over and went with the dress with eight pounds of tullle. The fact that I was going to the show was no longer an idea but becoming a reality and like a 13-year-old girl at her birthday party, I had a complete meltdown. Somehow the night before the Oscars I managed to get into an argument with my best friend, my mom and my boyfriend. I think I cried more in the 12 hours before the Oscars than I have in 10 years—I was really getting into the drama of the evening. I somehow managed to make an entire event having nothing to do with me all about me and my precious feelings. I really should have been an actress. But like Scarlett O'Hara I got my hair and makeup done, put on my ball gown and wasn't going to let anyone bring me down before MY big day.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://cms.myspacecdn.com/cms/x/14/10/030414-oscard-selfie.jpg" alt=""></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">How did I get invited to the 86th Academy Awards, you ask? Well, my best friend took me as her date. I met her seven years ago at an event where we both didn’t know a single person. We hit it off over a mutual respect for Chandler Bing, and we've been eating pizza together ever since.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://cms.myspacecdn.com/cms/x/14/10/030414-oscard-red-carpet.jpg" alt=""></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">I think the most interesting thing that they don't show anyone on TV is the street leading up to the Oscars. Highland (between Sunset and Hollywood) is filled with barricades with different entry points so no crazy person can plow their car through, killing everyone on the red carpet. Guarding each entry point through the barricades are men in head to toe camouflage with gigantic automatic weapons (rifles? I don't know guns). I try to take a photo of one and I'm stopped immediately. Completely lining the sidewalks of Highland are the Jesus freaks. I am not talking a few—I am talking every inch of the sidewalk is full of God-fearing picket signs and psalms. Some have megaphones and are yelling inaudible sermons and others just shouting at the line of black cars. Right before you get to the red carpet, you get to Westboro Baptists with huge yellow signs of pictures of Phillip Seymour Hoffman and Paul Walker saying "BURNING IN HELL" and other despicable things. It's so surreal and hate-filled, I feel like I am heading to my own personal Salem Witch Trial. One thing is for sure: They think we're all going to hell.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://a4-images.myspacecdn.com/images04/6/a68f5c4ff15c4f55924560acb7be3cb3/full.gif" alt="" width="400" height="209"></p>
+								<p style="text-align: justify;"><span style="font-size: 10px;"><em>My date grabbing my neck as she eats shit</em></span></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>We finally arrive</strong> at the red carpet and as we exit the car, my date eats shit and uses my freshly done Lauren Conrad up do to break her fall. The crowd goes wild. There are flashbulbs and people circling yet no one asks if I need any help because unless you are famous at the Oscars, you are completely invisible. I have never experienced anything like it. The only time anyone talks to you is if you are in the way of his or her photo. Oh and photographers on the carpet yell "YOU IN THE HUGE DRESS, GET OUT OF THE FUCKING SHOT." It's incredible. It is no wonder actors are crazy. The carpet is filled with screaming fans and photographers who only care about you; everyone is salivating to talk to you and telling you how great you look. We finally make it to the end of the carpet and I decide to use the restroom before I sit. Jessica Biel holds the door open for me and compliments my dress—no human being should be allowed to have her face and body. I get inside and Margot Robbie from <em>Wolf of Wall Street</em> shows me her Kardashian-sized diamond ring in line for the toilet and says "I feel like a guy with a gun should be following me—I could be halfway to Mexico with this by now." The lights begin to flicker and we are told we need to take our seats. I quickly pee and head to my seat.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://cms.myspacecdn.com/cms/x/14/10/030414-oscard-my-date.jpg" alt=""></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">The show begins and I am seated directly behind the camera's crane, so unless people are to either side of center stage, I can't see jack shit. They mount two maybe 32" TVs on either side of the auditorium which are near impossible to see so basically everyone in the theater is just sitting in complete darkness during the categories. It's around this time that you realize you are STARVING and haven't had any food since breakfast at 9 a.m. It's hot and you feel like you're going to pass out. After waiting for my date's category, her dad and I decide to hit the bar and just watch from the monitor behind the bar and slam a few drinks to make this tolerable. The Academy really needs to spring for more hors d'oeuvres options because now everyone is hammered. My date comes out after her category and we decide to watch the rest of the show in the greenroom where there is pizza. This is where the presenters and winners are hanging out and it's pretty jarring. Some guy picks up my purse that had fallen off my seat and I say "Thank you… Channing Tatum" and my dress gets caught on Jennifer Garner and we awkwardly laugh and someone tries to separate us. The lovely pregnant Kerry Washington asks me if she could have the Slim Jim in my purse. Glenn Close shows us her Oscar secret, which is a handmade corset and a dress long enough to hide her comfortable shoes. Miss J is sashaying around the room being crazy fabulous and I am one of maybe two non-famous people there. I kind of just sit there and smile creepily when someone catches me staring—shout out to Penelope Cruz.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://cms.myspacecdn.com/cms/x/14/10/030414-oscard-glenn-close-shoe.jpg" alt=""></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://cms.myspacecdn.com/cms/x/14/10/030414-oscard-miss-j.jpg" alt=""></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>After the show</strong> we go backstage where I meet Brad and Angelina. Brad Pitt smells amazing, like nothing I've ever smelled. Eventually we ask what cologne he's wearing and he tells us, "I don't wear cologne, it's just my musk I guess." I have to choose not to believe him because it would just be unfair to mankind. Angelina is gorgeous and elegant and they are like The Sun and The Moon.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">The show ends and we're ready to party. Everyone goes to Vanity Fair where, much like the Oscars, photographers yell at you and no one gives a shit that you are a human being unless you're famous. We can't enjoy ourselves because everyone, whether they know my date or not, has some weird story they just NEED to tell her as they stand in front of me pushing me out of the circle. I get tired of this and decide to follow Bill Murray around the party. At one point he looks in my direction and winks at me while dancing to "If You Want My Body and You Think I'm Sexy" by Rod Stewart—a moment, I now realize, my whole life had been leading up to. The party starts getting crowded and my date is exhausted and ready to leave for the next party. We head to Guy OSeary's party where there is no press and people can actually have a good time. We dance and drink, finally able to relax and enjoy ourselves. With the exception of a few weirdos, it was all and all a great party. Before I leave, Rachel Zoe grabs my arm and tells me I look "mage" (if you don't know her lingo, that's short for major and the highest compliment you can receive). At that point I realize my night is not going to get any better so we decide to end the night before we all get sloppy and sweat off our makeup.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><img src="https://cms.myspacecdn.com/cms/x/14/10/030414-oscard-oscar-dress.jpg" alt=""></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">I get home around 3:30 a.m. with an earring/hair headache and major Barbie feet. The whole experience was completely exhausting, overwhelming and surreal. I think what I took most away from the evening was how lovely all the women were. Actresses tend to get a bad reputation but every woman I met was lovely, witty and introduced themselves to me even though I wasn't famous—even Anne Hathaway. And Kerry Washington, if your marriage doesn't work out… CALL ME.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">P.S. Here are the REAL awards from the night (given out by yours truly)…</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>MOST BEAUTIFUL</strong></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Cate Blanchett: She looks like a mythical princess from a faraway land. Pictures do not do this woman justice, I felt like I needed to curtsy in front of her.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Honorable Mention: Jared Leto's hair. WHO IS YOUR COLORIST????</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>MOST IMPRESSIVE</strong></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Kerry Washington: I didn't have an opinion about her until I met her and I wish she were having my baby. Slim Jims forever, Kerry!</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>BEST SMELLING</strong></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Brad Pitt: WTF dude you should bottle that smell and sell it… to me, exclusively.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>BEST DRESSED</strong></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Kate Hudson: Perfect mix of glamour and sexy</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">AND</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Miss J: duh</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Honorable Mention: Nicholas Hoult's Tom Ford suit—YOWZA</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>BEST DANCER</strong></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Bill Murray: I love you more than I love my own family.</p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;"><strong>MOST HOLLYWOOD</strong></p>
+								<p style="text-align: justify;"><br></p>
+								<p style="text-align: justify;">Harvey Weinstein at the bar shaking my hand and saying, "you know who I am."</p>
+								<p>&nbsp;<img class="myspaceIcon" src="https://x.myspacecdn.com/new/common/images/msfav.png"></p>
+								<p class="credits"></p>
+								<p style="text-align: justify;"><a href="https://myspace.com/discover/trending/2014/03/03/oscars-2014-the-23-most-golden-gifs/" target="_blank">The Oscars’ 23 Most Golden GIFs</a></p>
+								<p style="text-align: justify;"><span style="color: #ffffff;">.</span></p>
+								<div class="columnbreak"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		</body>
+</html>
