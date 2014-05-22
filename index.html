@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>HIROKI OSAME</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,6 +15,9 @@
 
 	<style type="text/less">
 		*{
+			_font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
 			margin: 0; padding: 0;
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
@@ -22,9 +25,18 @@
 		}
 		html,body{
 			height: 100%;
+			/*background-color: #004358;*/
 		}
-		div#header{
-			padding: 20px 0;
+		div#navigator{
+			position: fixed;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 200px;
+			padding: 70px 0;
+			background-color: #fafafa;
+
 			div#photo{
 				@size: 130px;
 				background-image: url('https://s.gravatar.com/avatar/fc10ba2c1cc5d2c6089d3f663b6c112e?s=130');
@@ -32,43 +44,58 @@
 				height: @size;
 				border-radius: 50%;
 				margin: 0 auto;
-			}			
+			}
+
+
+			div#title{
+				/*color: #ffe11a;*/
+				text-align: center;
+				margin: 30px 0;
+				div#text{
+					font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+					text-transform: uppercase;
+					font-size: 11px;
+					font-weight: 300;
+				}
+				i{
+					font-size: 13px;
+					font-style: italic;
+					font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+				}
+				div#name{
+					font-size: 20px;
+					font-weight: 400;
+					text-transform: uppercase;
+					font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+				}
+			}
+
+			ul{
+				/*background-color: red;*/
+				list-style: none;
+				li{
+					font-weight: 100;
+					/*background-color: blue;*/
+					padding: 12px 0;
+					margin: 1px 0;
+					text-align: center;
+					cursor: pointer;
+					&:hover{
+						background-color: #f4f4f4;
+					}
+				}
+			}
+
 		}
 
-
-		div#title{
-			display: none;
-			margin: 20px auto;
-			width: 500px;
-			text-align: center;
-
-			div#text{
-				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-				text-transform: uppercase;
-				font-size: 12px;
-				font-weight: 300;
-			}
-
-			i{
-				font-size: 14px;
-				font-style: italic;
-				font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-			}
-			div#name{
-				font-size: 20px;
-				font-weight: 400;
-				text-transform: uppercase;
-				font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-			}
-
-		}
-		div#container{
-
+		#container{
+			/*color: #fd7400;*/
+			color: #666;
 			position: absolute;
-			top: 150px;
+			top: 0;
 			right: 0;
 			bottom: 0;
-			left: 0;
+			left: 190px;
 
 			div.horizontalContent{
 				position: absolute;
@@ -84,16 +111,20 @@
 					height: 100%;
 					white-space: nowrap;
 
-					div#articleContent{
+
+					*{
 						display: inline-block;
+					}
+
+					div#articleContent{
 						height: 100%;
 						padding: 50px;
 
 						position: relative;
 
-						& > *{
-							display: inline-block;
-						}
+						text-align: justify;
+						font-weight: 200;
+
 						div#summary{
 							width: 300px;
 							margin-right: 55px;
@@ -113,6 +144,10 @@
 							-webkit-column-gap: 20px;
 							-webkit-column-width: 450px;
 							white-space: normal;
+							font-size: 12px;
+							p{
+								margin-bottom: 10px;
+							}
 						}
 
 					}
@@ -130,21 +165,29 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<div id="header">	
+	<div id="navigator">
 		<div id="photo"></div>
+		<div id="title">
+			<div id="text">Portfolio</div>
+			<i>—of—</i><br>
+			<div id="name">Hiroki Osame</div>
+		</div>
+		<ul>
+			<li>About</li>
+			<li>Resumé</li>
+			<li>Projects</li>
+			<li>Security</li>
+			<li>Design</li>
+		</ul>
 	</div>
-	<div id="title">
-		<div id="text">Portfolio</div>
-		<i>—of—</i><br>
-		<div id="name">Hiroki Osame</div>
-	</div>
+
 
 
 	<div id="container">
 		<div class="horizontalContent">
-			<div id="articleWrap" class="withCover">
+			<div id="articleWrap">
 				<div id="articleContent">
-					<div id="summary" class="Small">
+					<div id="summary">
 						<header>
 							<h1>Stuff</h1>	
 						</header>
@@ -160,10 +203,8 @@
 							stuff
 						</div>
 					</div>
-
-
 					<div id="advanceEditorArticle">
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -172,7 +213,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -181,7 +222,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -190,7 +231,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -199,7 +240,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -208,7 +249,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -217,7 +258,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -226,7 +267,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -235,7 +276,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -244,7 +285,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -253,7 +294,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -262,7 +303,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -271,7 +312,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -280,7 +321,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<br>
-						<p style="text-align: justify;">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
