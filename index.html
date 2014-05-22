@@ -23,14 +23,18 @@
 		html,body{
 			height: 100%;
 		}
-		div#photo{
-			@size: 130px;
-			background-image: url('https://s.gravatar.com/avatar/fc10ba2c1cc5d2c6089d3f663b6c112e?s=130');
-			width: @size;
-			height: @size;
-			border-radius: 50%;
-			margin: 10px auto;
+		div#header{
+			padding: 20px 0;
+			div#photo{
+				@size: 130px;
+				background-image: url('https://s.gravatar.com/avatar/fc10ba2c1cc5d2c6089d3f663b6c112e?s=130');
+				width: @size;
+				height: @size;
+				border-radius: 50%;
+				margin: 0 auto;
+			}			
 		}
+
 
 		div#title{
 			display: none;
@@ -126,12 +130,15 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<div id="photo"></div>
+	<div id="header">	
+		<div id="photo"></div>
+	</div>
 	<div id="title">
 		<div id="text">Portfolio</div>
 		<i>—of—</i><br>
 		<div id="name">Hiroki Osame</div>
 	</div>
+
 
 	<div id="container">
 		<div class="horizontalContent">
@@ -284,9 +291,11 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
 
 
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-			<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-		</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+</body>
 </html>
