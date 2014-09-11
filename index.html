@@ -1,181 +1,15 @@
-<html lang="">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HIROKI OSAME</title>
+	<title>Hiroki Osame</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
 	<link rel="stylesheet" href="css/normalize.css">
-
-
-	<style type="text/less">
-		*{
-			_font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-
-			margin: 0; padding: 0;
-			box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-		}
-		html,body{
-			height: 100%;
-			width: 100%;
-			/*background-color: #004358;*/
-		}
-		div#navigator{
-			position: fixed;
-			z-index: 10;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			width: 200px;
-			padding: 70px 0;
-			background-color: #fafafa;
-
-			box-shadow: 0px 0 20px 0px rgba(0, 0, 0, 0.1);
-
-
-			a{
-				text-decoration: none;
-				color: #333;
-			}
-			div#photo{
-				@size: 130px;
-				background-image: url('https://s.gravatar.com/avatar/fc10ba2c1cc5d2c6089d3f663b6c112e?s=130');
-				width: @size;
-				height: @size;
-				border-radius: 50%;
-				border: 1px solid #eee;
-				margin: 0 auto;
-			}
-
-
-			div#title{
-				/*color: #ffe11a;*/
-				text-align: center;
-				margin: 22px 0 30px;
-				*{
-					margin: 2px 0;
-				}
-				div#text{
-					font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-					text-transform: uppercase;
-					font-size: 11px;
-					font-weight: 100;
-					letter-spacing: 4px;
-				}
-				i{
-					font-size: 12px;
-					font-style: italic;
-					font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-				}
-				div#name{
-					font-size: 24px;
-					font-weight: 400;
-					text-transform: uppercase;
-					font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-					letter-spacing: 1px;
-				}
-			}
-
-			ul{
-				/*background-color: red;*/
-				list-style: none;
-				li{
-					a{
-						display: block;
-						width: 100%;
-						font-weight: 100;
-						text-align: center;
-						padding: 12px 0;
-
-					}
-					margin: 1px 0;
-					cursor: pointer;
-					&:hover{
-						background-color: #f4f4f4;
-					}
-
-				}
-			}
-
-		}
-
-		#container{
-			color: #666;
-			padding-left: 190px;
-
-			div#articleWrap{
-				overflow-x: scroll;
-				overflow-y: hidden;
-				height: 100%;
-
-				*{
-					display: inline-block;
-				}
-
-				div#articleContent{
-					height: 100%;
-
-					padding: 50px 0px 10px 50px;
-
-					text-align: justify;
-					font-weight: 200;
-					white-space: normal;
-
-					& > *{
-						height: 100%;
-					}
-
-					div#summary{
-						width: 300px;
-						margin-right: 30px;
-						vertical-align: top;
-						height: 100%;
-						font-size: 16px;
-						h1{
-							font-weight: 600;
-							font-size: 32px;
-						}
-						h2{
-							font-size: 14px;
-							font-weight: 100;
-						}
-					}
-					div#advanceEditorArticle{
-						width: 450px;
-						@cgap: 20px;
-						@cwidth: 450px;
-
-						column-gap: @cgap;
-						column-width: @cwidth;
-						-moz-column-gap: @cgap;
-						-moz-column-width: @cwidth;
-						-webkit-column-gap: @cgap;
-						-webkit-column-width: @cwidth;
-						font-size: 12px;
-						p{
-							margin: 5px 10px;
-						}
-
-					}
-					div#break{/*
-						width: 40px;
-*/						height: 100%;
-						background-color: blue;						
-					}
-
-				}
-			}
-
-		}
-
-
-	</style>
+	<link rel="stylesheet" type="text/less" href="css/style.less">
 	<script src="js/less-1.4.1.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -200,172 +34,26 @@
 			<li><a href="#design">Design</a></li>
 		</ul>
 	</div>
-
-
-
-	<div id="container">
-		<div id="articleWrap">
-			<div id="articleContent">
-				<div id="summary">
-					<h1>About</h1>
-					<h2>5/22, 2014</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div id="advanceEditorArticle">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-
-					<div id="break"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
+	<div id="container"></div>
 
 	<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
-
-	<script src="js/pdf.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	$(function(){
-		var
-			pages = {
-				"#about": "",
-				"#security": [
-					{
-						"title": "BU",
-						"date": new Date(),
-						"content": ""
-					}
-				]
-			},
+		var container = $("div#container"),
 			hashHandle = function(){
-				var page = window.location.hash || "#about";
+				var pageInd = (window.location.hash || "#about").substr(1);
 
-				$("div#articleWrap").append($("<div></div>", { "id": articleContent, "text":'ass' }));
-				
+				$.get("/pages/"+pageInd+".html", function(body, status){
+					container.html(body);
+				});
+
+
+				// $("div#container").hide(500);
+				// $("body").append(container);
+
 			};
 
-
 		window.location.hash && hashHandle();
-
 
 		$(window).on('hashchange', hashHandle);
 	});
